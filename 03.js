@@ -1,6 +1,4 @@
-function transform(arg1) {
-  return arg1.pop();
-}
+const transform = (arg1) => arg1 % 2 === 0;
 
 
 
@@ -37,4 +35,5 @@ function transform(arg1) {
 
 
 
-console.log(transform([5, 6, 7]));
+
+console.log(transform(8));

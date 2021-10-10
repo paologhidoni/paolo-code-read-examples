@@ -1,9 +1,9 @@
 function transform(arg1) {
-  if(typeof arg1 === 'boolean') {
-    return !arg1;
-  } else {
-    return 'If it\'s not a Boolean I don\'t care.';
-  }
+  let firstResult = arg1.pop();
+  let secondResult = arg1.unshift();
+  return `First result is: ${firstResult} 
+Second result is: ${secondResult}`
+  
 }
 
 
@@ -41,6 +41,4 @@ function transform(arg1) {
 
 
 
-
-console.log(transform(true));
-console.log(transform('Do you care?'));
+console.log(transform([5, 6, 7]));

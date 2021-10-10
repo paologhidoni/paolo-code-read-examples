@@ -1,5 +1,10 @@
 function transform(arg1) {
-  return arg1.slice(0, 1);
+  let result = ''
+  for (let i = 0; i < arg1.length; i++) {
+    result += arg1[i];
+  }
+  result = arg1.toUpperCase();
+  return result;
 }
 
 
@@ -38,4 +43,6 @@ function transform(arg1) {
 
 
 
-console.log(transform('Ciao'));
+
+
+console.log(transform('Ufos exist!'));
