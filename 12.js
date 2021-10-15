@@ -1,8 +1,4 @@
-function transform(arg1) {
-  let result = arg1.split('').map((el, index) =>  arg1.charCodeAt(index));
-
-  return String.fromCharCode(...result);
-}
+const transform = (arg1) => new Set(arg1).size;
 
 
 
@@ -40,4 +36,4 @@ function transform(arg1) {
 
 
 
-console.log(transform('Had you known you before you wouldn\'t have wasted your time!'));
+console.log(transform([2, 3, 'a', 'a', 'f', 5, 5, 5, 6]));

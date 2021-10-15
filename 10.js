@@ -1,5 +1,9 @@
-const transform = (arg1) => arg1.length > 5 ?`${arg1.slice(0, 2)} ${arg1.slice(2)}`:
-arg1;
+function transform(arg1) {
+  const [a, b, ...others] = arg1;
+
+  return others;
+
+}
 
 
 
@@ -36,9 +40,4 @@ arg1;
 
 
 
-
-
-console.log(transform('hohoooo!'))
-console.log(transform('Santa'));
-console.log(transform('ishere!'))
-console.log(transform('ornot???'))
+console.log(transform(['Bread', 'Butter', 'Olives', 'Potatoes', 'Carrots']));

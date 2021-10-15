@@ -2,6 +2,7 @@ const transform = (arg1, arg2) => {
   for (const [key, value] of Object.entries(arg1)) {
     arg2 = arg2.concat([[key.replace(/\w*_/, 'The ' ), value]]);
   }
+  console.log(arg2);
   return Object.assign({}, arg2);
 }
 

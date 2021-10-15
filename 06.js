@@ -1,8 +1,10 @@
 function transform(arg1) {
-  const [a, b, ...others] = arg1;
-
-  return others;
-
+  
+  let firstResult = arg1.pop();
+  let secondResult = arg1.unshift();
+  return `First result is: ${firstResult} 
+Second result is: ${secondResult}`
+  
 }
 
 
@@ -40,4 +42,4 @@ function transform(arg1) {
 
 
 
-console.log(transform(['Bread', 'Butter', 'Olives', 'Potatoes', 'Carrots']));
+console.log(transform([5, 6, 7]));

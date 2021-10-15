@@ -1,6 +1,5 @@
 function transform(arg1) {
-  const {a, b, c='Hello hello', ...others} = arg1;
-  return c;
+  return arg1.length < 10 ? arg1.padEnd(10, '*') : arg1.substring(0, 10)
 }
 
 
@@ -37,12 +36,9 @@ function transform(arg1) {
 // danger zone *****
 
 
-console.log(transform(
-  {
-    a: 'String one',
-    b: 'String two',
-    c: 'String three',
-    d: 'String four',
-    e: 'String five'
-  }
-));
+
+
+console.log(transform('Hi'));
+console.log(transform('Am I right? Am I not?'));
+console.log(transform('0056780761000000000000000'));
+console.log(transform('87897'));
