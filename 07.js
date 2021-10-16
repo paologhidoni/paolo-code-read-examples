@@ -1,6 +1,4 @@
-function transform(arg1) {
-  return arg1.length < 10 ? arg1.padEnd(10, '*') : arg1.substring(0, 10)
-}
+const transform = (arg1, arg2) => arg2(arg1);
 
 
 
@@ -38,7 +36,7 @@ function transform(arg1) {
 
 
 
-console.log(transform('Hi'));
-console.log(transform('Am I right? Am I not?'));
-console.log(transform('0056780761000000000000000'));
-console.log(transform('87897'));
+
+console.log(transform(2, function(x){return x < 10}));
+console.log(transform(2, function(x){return x > 10}));
+console.log(transform(2, function(x){return typeof x}));
