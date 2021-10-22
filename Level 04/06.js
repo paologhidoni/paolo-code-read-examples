@@ -1,5 +1,5 @@
 function transform(arg1) {
-  let result = arg1.split('').map((el, index) =>  arg1.charCodeAt(index));
+  let result = arg1.split('').map((x, y) =>  arg1.charCodeAt(y));
   return String.fromCharCode(...result);
 }
 

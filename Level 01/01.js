@@ -1,7 +1,7 @@
 function transform(arg1) {
   let result = ''
-  for (let i = 0; i < arg1.length; i++) {
-    result += arg1[i];
+  for (let x = 0; x < arg1.length; x++) {
+    result += arg1[x];
   }
   result = arg1.toUpperCase();
   return result;

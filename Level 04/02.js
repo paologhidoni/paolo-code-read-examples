@@ -1,5 +1,5 @@
-const transform = (arg1) => arg1.reduce((acc, el) => {
-  return acc * el;
+const transform = (arg1) => arg1.reduce((x, y) => {
+  return x * y;
 }, 1)
 
 
