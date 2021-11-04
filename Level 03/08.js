@@ -1,5 +1,5 @@
 function transform(arg1, arg2) {
-  return arg2.test(arg1);
+  return arg1.test(arg2);
 }
 
 
@@ -39,8 +39,8 @@ function transform(arg1, arg2) {
 
 
 
-console.log(transform('Hello', /\d+/g));
-console.log(transform('Hello', /\w+/g));
-console.log(transform('Hello', /e/g));
-console.log(transform('Hello', /[lo]/g));
-console.log(transform('Hello', /z/g));
+console.log(transform(/\d+/g, 'Hello'));
+console.log(transform(/\w+/g, 'Hello'));
+console.log(transform(/e/g, 'Hello'));
+console.log(transform(/[lo]/g, 'Hello'));
+console.log(transform(/z/g, 'Hello'));
