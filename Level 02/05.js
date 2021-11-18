@@ -36,7 +36,42 @@ function transform(arg1) {
 
 
 
-// danger zone *****
+
+
+
+
+
+
+
+
+
+
+// ***** DANGER ZONE ********** //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,22 +79,6 @@ function transform(arg1) {
 
 
 console.log(transform([1, 2, 3, 4, 5]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
